@@ -4,3 +4,4 @@ Scripts/
 static_cdn/
 
 pyenv.cfg
+*.sqlite3
