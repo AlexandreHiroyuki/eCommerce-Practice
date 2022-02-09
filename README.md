@@ -15,3 +15,10 @@ Collect statics:
 ```
 python manage.py collectstatic
 ```
+
+Migrations:
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
