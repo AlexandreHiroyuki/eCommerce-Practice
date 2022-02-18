@@ -30,12 +30,13 @@ from django.urls import path, include
 
 from .views import home_page, contact_page, login_page, register_page
 
+
 urlpatterns = [
     path('', home_page, name='home'),
     path('contact/', contact_page, name='contact'),
     path('login/', login_page, name='login'),
     path('register/', register_page, name='register'),
-    path('products/', include('products.urls')),
+    path('products/', include('products.urls', namespace='products')),
     # path('featured/', product_featured_list_view, name='featured'),
     # path('featured/<int:pk>/', product_featured_detail_view,
     #      name='featured_details'),

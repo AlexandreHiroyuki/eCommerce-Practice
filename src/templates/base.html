@@ -7,10 +7,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <title>Base Template</title>
+    {% include 'base/css.html' %}
   </head>
   <body>
-    {% block content %}{% endblock %}
+    {% include 'base/navbar.html' with brand_name='eCommerce' %} <br />
+    {% block content %} {% endblock %} <br />
+    {% include 'base/js.html' %}
   </body>
 </html>
