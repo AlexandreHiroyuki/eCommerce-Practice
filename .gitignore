@@ -3,5 +3,7 @@ Lib/
 Scripts/
 static_cdn/
 
+pyvenv.cfg
 pyenv.cfg
 *.sqlite3
+.env
